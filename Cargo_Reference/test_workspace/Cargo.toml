@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "hello_world",
+    "my_lib"
+]
+
+[profile.dev]
+opt-level = 0
+debug = true

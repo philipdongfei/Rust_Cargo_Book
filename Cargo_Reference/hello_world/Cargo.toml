@@ -8,6 +8,15 @@ edition = "2021"
 [dependencies]
 time = "0.1.12"
 hello_utils = { path = "hello_utils", version = "0.1.0" }
+#uuid = "1.0"
+uuid = "1.0"
 
 [target.'cfg(unix)'.build-dependencies]
 cc = "1.0.3"
+
+[patch.crates-io]
+uuid = { path = "/home/philip/GitProject/uuid" }
+#uuid = { git = 'https://github.com/uuid-rs/uuid', branch = '2.0.0' }
+
+#[patch."https://github.com/your/repository"]
+#my-library = { path = "../my-library/path" }
